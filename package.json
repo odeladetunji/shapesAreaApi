@@ -1,0 +1,35 @@
+{
+  "name": "shapesareaapi",
+  "version": "1.0.0",
+  "description": "Api for calculation areas of various shapes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/odeladetunji/shapesAreaApi.git"
+  },
+  "author": "Odelade Olatunji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odeladetunji/shapesAreaApi/issues"
+  },
+  "homepage": "https://github.com/odeladetunji/shapesAreaApi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cor": "0.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.6",
+    "jest": "^26.6.3",
+    "joi": "^17.3.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0",
+    "supervisor": "^0.12.0",
+    "swagger-jsdoc": "^6.0.2",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
