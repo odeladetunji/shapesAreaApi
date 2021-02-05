@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "64bf33fa-8d31-46f7-80e8-e63b70bb329a",
+		"name": "Shapes And Area",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetchAUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTI0ODc4NTB9.DniFiq_we0t8lEOBCZ1z5kOmyCC6EzATay-ZfVJRXzE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "odeladetest.com/fetchAUser?email=odldenjyrig@gmail.com&password=909879",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"fetchAUser"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "odldenjyrig@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "909879"
+						}
+					]
+				},
+				"description": "PS5 and xBox_series_x sold"
+			},
+			"response": []
+		},
+		{
+			"name": "fetchAllUsers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTI0ODc4NTB9.DniFiq_we0t8lEOBCZ1z5kOmyCC6EzATay-ZfVJRXzE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "odeladetest.com/fetchAllUsers?email=odldenjyrige@gmail.com&password=909879",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"fetchAllUsers"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "odldenjyrige@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "909879"
+						}
+					]
+				},
+				"description": "PS5 and xBox_series_x sold"
+			},
+			"response": []
+		},
+		{
+			"name": "fetch Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "odeladetest.com/fetchtoken?email=odldenjyrige@gmail.com&password=909879",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"fetchtoken"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "odldenjyrige@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "909879"
+						}
+					]
+				},
+				"description": "PS5 and xBox_series_x sold"
+			},
+			"response": []
+		},
+		{
+			"name": "Register Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTI0ODc4NTB9.DniFiq_we0t8lEOBCZ1z5kOmyCC6EzATay-ZfVJRXzE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"odlden999e0oge@gmail.com\",\n    \"password\": 909879\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "odeladetest.com/registerusers",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"registerusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Area of Rectangle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"email\": \"oafads@gmail.com\",\n\t\"shape\": \"Rectangle\",\n    \"password\": \"23242\",\n\t\"dimension\": {\n\t\t\"length\": 10,\n\t\t\"breath\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "odeladetest.com/areaOfRectangle",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"areaOfRectangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Area of Square",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"email\": \"oafads@gmail.com\",\n\t\"shape\": \"Square\",\n    \"password\": \"23242\",\n\t\"dimension\": {\n\t\t\"length\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "odeladetest.com/areaOfSquare",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"areaOfSquare"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Area of Triangle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"email\": \"oafads@gmail.com\",\n\t\"shape\": \"Triangle\",\n    \"password\": \"23242\",\n\t\"dimension\": {\n\t\t\"side_a\": 10,\n\t\t\"side_b\": 10,\n\t\t\"side_c\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "odeladetest.com/areaOfTriangle",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"areaOfTriangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Area of Circle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"email\": \"oafads@gmail.com\",\n\t\"shape\": \"Circle\",\n    \"password\": \"23242\",\n\t\"dimension\": {\n\t\t\"radius\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "odeladetest.com/areaOfCircle",
+					"host": [
+						"odeladetest",
+						"com"
+					],
+					"path": [
+						"areaOfCircle"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
