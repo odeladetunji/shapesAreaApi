@@ -10,6 +10,7 @@ const rectangle = require('./routes/rectangle');
 const square = require('./routes/square');
 const triangle = require('./routes/triangle');
 const circle = require('./routes/circle');
+const fetchToken = require('./routes/fetchToken');
 
 app.use(bodyParser.urlencoded({ extended: false })); // urlencoded form parser
 app.use(bodyParser.json())  // json parser
@@ -23,6 +24,7 @@ app.use('/areaOfRectangle', rectangle);
 app.use('/areaOfSquare', square);
 app.use('/areaOfTriangle', triangle);
 app.use('/areaOfCircle', circle);
+app.use('/fetchtoken', fetchToken);
 
 server.listen(9000, function(){
 	console.log('Shape and Area Api');

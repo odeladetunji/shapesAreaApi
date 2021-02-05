@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express.Router();
 const modelData = require('../database/model/data')
+const validation = require('../validation/validateToken');
 
-app.post("/", (request, response) => {
+app.post("/", validation.validateToken, (request, response) => {
 
     if(request.body.shape != "Triangle")
     return response.status(400).json({

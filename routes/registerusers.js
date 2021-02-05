@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express.Router();
 const modelData = require('../database/model/data');
+const validation = require('../validation/validateToken');
 
-app.post("/", (request, response) => {
-    console.log(request.body)
-
+app.post("/", validation.validateToken, validation.validateToken, (request, response) => {
+   
     function createNewUser(){
         modelData.users.create({
             "email": request.body.email,
@@ -27,9 +27,10 @@ app.post("/", (request, response) => {
           email: request.body.email
         }
     }).then(user => {
-        switch(user.length){
-            case user.length > 0: createNewUser();
-            default: return response.status(400).json({ errors: "User with this email already exists"})
+        if(user.length == 0){
+            createNewUser();
+        }else{
+            response.status(400).json({ errors: "User with this email already exists"})
         }
     });
 
