@@ -15,7 +15,7 @@ app.post("/", validation.validateToken, (request, response) => {
 
     modelData.shapes.create({
         email: request.body.email,
-        area: areaOfTriangle,
+        area: areaOfTriangle.toFixed(2),
         shapetype: request.body.shape,
         payload: JSON.stringify(request.body.dimension)
     }).then(resp => {
