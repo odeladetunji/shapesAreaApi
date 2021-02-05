@@ -15,3 +15,14 @@ You can find it on the root directory of the project
 token to the various authorization headers of the various Api.
 Please use Bearer Token
 
+#If you want to run the app locally, then do the following
+from the root directory of the project. run the command
+supervisor index.js
+this should start the application
+
+2. Please run the shape.sql and users.sql script from the command console of postgres
+   This should initialize the users and shapes tables of the Application
+
+#Note
+The application is currently listening on port 9000, you may want to 
+change this to suit your own environment
