@@ -4,7 +4,7 @@ const validation = require('../validation/emailAndPassword');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
-app.get("/", validation.validateToken, (request, response) => {
+app.get("/", (request, response) => {
     validation.emailValidation(request, response);
     validation.passwordValidation(request, response);
 
